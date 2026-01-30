@@ -84,11 +84,9 @@ gravityY = alpha * gravityY + (1 - alpha) * event.acceleration.y;
 float linearX = event.acceleration.x - gravityX;
 float linearY = event.acceleration.y - gravityY;
 
-// scale and feed into particle offset
 offsetX += linearX * 1.5f;
 offsetY -= linearY * 1.5f;
 
-// optional damping
 offsetX *= 0.85f;
 offsetY *= 0.85f;
 
